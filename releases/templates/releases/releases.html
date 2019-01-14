@@ -74,15 +74,15 @@
               {% for release in releases.all %}
 
 
-              <div class="col-md-4">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                 <div class="card mb-4 shadow-sm">
                   <a href="{% url 'detail' release.id %}"><img class="card-img-top" src='{{ release.image.url }}' /> </a>
                   <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
-                      <a href="{{ release.soundcloud_link }}"><img src="{% static 'scicondark.png' %}" style="width: 50%;" /></a>
-                      <a href="{{ release.spotify_link }}"><img src="{% static 'spotifyicondark.png' %}" style="width: 50%;" /></a>
-                      <a href="{{ release.deezer_link }}"><img src="{% static 'deezericondark.png' %}" style="width: 50%;"/></a>
-                      <a href="{{ release.beatport_link }}"><img src="{% static 'bpicondark.png' %}" style="width: 50%;"/></a>
+                      <a href="{{ release.soundcloud_link }}"><img src="{% static 'scicondark.png' %}" style="width: 80%;" /></a>
+                      <a href="{{ release.spotify_link }}"><img src="{% static 'spotifyicondark.png' %}" style="width: 80%;" /></a>
+                      <a href="{{ release.deezer_link }}"><img src="{% static 'deezericondark.png' %}" style="width: 80%;"/></a>
+                      <a href="{{ release.beatport_link }}"><img src="{% static 'bpicondark.png' %}" style="width: 80%;"/></a>
                         </div>
                         <br />
                         <p class="card-text">{{ release.catal_number }} </p>
