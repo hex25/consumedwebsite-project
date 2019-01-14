@@ -71,33 +71,33 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="{% static 'slide-future.jpg' %}" class="d-block w-100" alt="...">
+        <img src="{% static 'slide-future.jpg' %}" class="d-block w-100" alt="Future">
         <div class="carousel-caption d-none d-md-block">
-      <h4>Listen to this amazing release :
-      <a href="#"><img src="{% static 'sciconlight.png' %}" style="width: 6%;" class="p-2"/></a>
-      <a href="#"><img src="{% static 'spotifyiconlight.png' %}" style="width: 6%;" class="p-2" /></a>
-      <a href="#"><img src="{% static 'deezericonlight.png' %}" style="width: 6%;" class="p-2" /></a>
-      <a href="https://www.beatport.com/release/future/2469173"><img src="{% static 'bpiconlight.png' %}" style="width: 6%;" class="p-2" /></a></h4>
+      <h4>Listen here :
+      <a href="https://soundcloud.com/consumed-music/sets/alpha-particle-assembly-future" target='blank'><img src="{% static 'sciconlight.png' %}" style="width: 6%;" class="p-2"/></a>
+      <a href="https://open.spotify.com/album/2rqOTgTePFrpwQ8j2DVOdH" target='blank'><img src="{% static 'spotifyiconlight.png' %}" style="width: 6%;" class="p-2" /></a>
+      <a href="https://www.deezer.com/en/album/82050592" target='blank'><img src="{% static 'deezericonlight.png' %}" style="width: 6%;" class="p-2" /></a>
+      <a href="https://www.beatport.com/release/future/2469173" target='blank'><img src="{% static 'bpiconlight.png' %}" style="width: 6%;" class="p-2" /></a></h4>
     </div>
       </div>
       <div class="carousel-item">
-        <img src="{% static 'slide-nature.jpg' %}" class="d-block w-100" alt="...">
+        <img src="{% static 'slide-nature.jpg' %}" class="d-block w-100" alt="Nature of Reality">
         <div class="carousel-caption d-none d-md-block">
-      <h4>Listen to this amazing release :
-      <a href="#"><img src="{% static 'sciconlight.png' %}" style="width: 6%;" class="p-2"/></a>
-      <a href="#"><img src="{% static 'spotifyiconlight.png' %}" style="width: 6%;" class="p-2" /></a>
-      <a href="#"><img src="{% static 'deezericonlight.png' %}" style="width: 6%;" class="p-2" /></a>
-      <a href="https://www.beatport.com/release/nature-of-reality/2432298"><img src="{% static 'bpiconlight.png' %}" style="width: 6%;" class="p-2" /></a></h4>
+      <h4>Listen here :
+      <a href="https://soundcloud.com/consumed-music/sets/mihalyz-nature-of-reality" target='blank'><img src="{% static 'sciconlight.png' %}" style="width: 6%;" class="p-2"/></a>
+      <a href="https://open.spotify.com/album/0FAnn89h22oIFq2djwBY0v" target='blank'><img src="{% static 'spotifyiconlight.png' %}" style="width: 6%;" class="p-2" /></a>
+      <a href="https://www.deezer.com/en/album/77733212" target='blank'><img src="{% static 'deezericonlight.png' %}" style="width: 6%;" class="p-2" /></a>
+      <a href="https://www.beatport.com/release/nature-of-reality/2432298" target='blank'><img src="{% static 'bpiconlight.png' %}" style="width: 6%;" class="p-2" /></a></h4>
     </div>
       </div>
       <div class="carousel-item">
-        <img src="{% static 'slide-gp.jpg' %}" class="d-block w-100" alt="...">
+        <img src="{% static 'slide-gp.jpg' %}" class="d-block w-100" alt="Ghost Protocol">
         <div class="carousel-caption d-none d-md-block">
-      <h4>Listen to this amazing release :
-      <a href="#"><img src="{% static 'sciconlight.png' %}" style="width: 6%;" class="p-2"/></a>
-      <a href="#"><img src="{% static 'spotifyiconlight.png' %}" style="width: 6%;" class="p-2" /></a>
-      <a href="#"><img src="{% static 'deezericonlight.png' %}" style="width: 6%;" class="p-2" /></a>
-      <a href="https://www.beatport.com/release/ghost-protocol/2385004"><img src="{% static 'bpiconlight.png' %}" style="width: 6%;" class="p-2" /></a></h4>
+      <h4>Listen here :
+      <a href="https://soundcloud.com/consumed-music/sets/lolla-tek-mikel-gil-ghost" target='blank'><img src="{% static 'sciconlight.png' %}" style="width: 6%;" class="p-2"/></a>
+      <a href="https://open.spotify.com/album/2VwHcMIHzu52o2GkVOuJqi" target='blank'><img src="{% static 'spotifyiconlight.png' %}" style="width: 6%;" class="p-2" /></a>
+      <a href="https://www.deezer.com/en/album/72453042" target='blank'><img src="{% static 'deezericonlight.png' %}" style="width: 6%;" class="p-2" /></a>
+      <a href="https://www.beatport.com/release/ghost-protocol/2385004" target='blank'><img src="{% static 'bpiconlight.png' %}" style="width: 6%;" class="p-2" /></a></h4>
     </div>
       </div>
     </div>
@@ -125,10 +125,10 @@
                   <div class="card-body">
 
                     <div class="d-flex justify-content-between align-items-center">
-                      <img src="{% static 'scicondark.png' %}" style="width: 15%;" />
-                      <img src="{% static 'spotifyicondark.png' %}" style="width: 15%;" />
-                      <img src="{% static 'deezericondark.png' %}" style="width: 15%;"/>
-                      <img src="{% static 'bpicondark.png' %}" style="width: 15%;"/>
+                      <a href="{{ release.soundcloud_link }}"><img src="{% static 'scicondark.png' %}" style="width: 50%;" /></a>
+                      <a href="{{ release.spotify_link }}"><img src="{% static 'spotifyicondark.png' %}" style="width: 50%;" /></a>
+                      <a href="{{ release.deezer_link }}"><img src="{% static 'deezericondark.png' %}" style="width: 50%;"/></a>
+                      <a href="{{ release.beatport_link }}"><img src="{% static 'bpicondark.png' %}" style="width: 50%;"/></a>
                         </div>
                         <br />
 
