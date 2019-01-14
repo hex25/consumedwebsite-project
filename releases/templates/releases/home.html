@@ -127,12 +127,12 @@
                   <a href="{% url 'detail' release.id %}"><img class="card-img-top" src='{{ release.image.url }}' /> </a>
                   <div class="card-body p-2">
 
-                    <div class="d-flex justify-content-between align-items-center">
-                      <a href="{{ release.soundcloud_link }}" target='blank'><img src="{% static 'scicondark.png' %}" style="width: 30px;" /></a>
-                      <a href="{{ release.itunes_link }}" target='blank'><img src="{% static 'itunesicondark.png' %}" style="width: 25px;" /></a>
-                      <a href="{{ release.spotify_link }}" target='blank'><img src="{% static 'spotifyicondark.png' %}" style="width: 30px;" /></a>
-                      <a href="{{ release.deezer_link }}" target='blank'><img src="{% static 'deezericondark.png' %}" style="width: 30px;"/></a>
-                      <a href="{{ release.beatport_link }}" target='blank'><img src="{% static 'bpicondark.png' %}" style="width: 30px;"/></a>
+                    <div style="text-align:center;">
+                      <a href="{{ release.soundcloud_link }}" target='blank'><img src="{% static 'scicondark.png' %}" style="width: 45px;" class="p-1"/></a>
+                      <a href="{{ release.itunes_link }}" target='blank'><img src="{% static 'itunesicondark.png' %}" style="width: 40px;" class="p-1" /></a>
+                      <a href="{{ release.spotify_link }}" target='blank'><img src="{% static 'spotifyicondark.png' %}" style="width: 45px;" class="p-1"/></a>
+                      <a href="{{ release.deezer_link }}" target='blank'><img src="{% static 'deezericondark.png' %}" style="width: 40px;" class="p-1"/></a>
+                      <a href="{{ release.beatport_link }}" target='blank'><img src="{% static 'bpicondark.png' %}" style="width: 40px;" class="p-1"/></a>
                         </div>
                         <br />
 
