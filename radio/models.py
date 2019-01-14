@@ -14,3 +14,6 @@ class Radio(models.Model):
     def radiodetails(request, radio_id):
     	detailpodcast = get_object_or_404(Radio, pk=radio_id)
     	return render(request, 'radio/radiodetail.html', {'radio': detailpodcast})
+
+    def __str__(self):
+        return self.podcast_title

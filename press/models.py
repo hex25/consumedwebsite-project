@@ -10,3 +10,6 @@ class Press(models.Model):
     catal_number = models.CharField(max_length=20)
     release_link = models.CharField(max_length=100)
     press_link = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.press_title
