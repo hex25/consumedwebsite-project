@@ -5,11 +5,12 @@ from .models import Release
 # Create your views here.
 
 def home(request):
-	releases = Release.objects
+	releases = Release.objects.order_by('-catal_number')
+
 	return render(request, 'releases/home.html', {'releases':releases})
 
 def allreleases(request):
-	releases = Release.objects
+	releases = Release.objects.order_by('-catal_number')
 	return render(request, 'releases/releases.html', {'releases':releases})
 
 def contact(request):

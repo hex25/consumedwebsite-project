@@ -11,6 +11,9 @@ class Support(models.Model):
     catal_number = models.CharField(max_length=20)
     release_link = models.CharField(max_length=100)
 
+    def __str__(self):
+        return self.support_title
+
 class Supportimage(models.Model):
 
     support_title = models.CharField(max_length=200)
@@ -18,3 +21,6 @@ class Supportimage(models.Model):
     support_image = models.ImageField(upload_to='images/', blank=True)
     catal_number = models.CharField(max_length=20)
     release_link = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return self.support_title

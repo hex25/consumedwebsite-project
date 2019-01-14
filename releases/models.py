@@ -9,6 +9,7 @@ class Release(models.Model):
     artist_name = models.CharField(max_length=100)
     catal_number = models.CharField(max_length=20)
     beatport_link = models.CharField(max_length=300, null=True)
+    itunes_link = models.CharField(max_length=300, null=True)
     spotify_link = models.CharField(max_length=300, null=True)
     deezer_link = models.CharField(max_length=300, null=True)
     soundcloud_link = models.CharField(max_length=300, null=True)
@@ -21,3 +22,6 @@ class Release(models.Model):
     def details(request, release_id):
     	detailrelease = get_object_or_404(Release, pk=release_id)
     	return render(request, 'releases/releasedetail.html', {'release': detailrelease})
+
+    def __str__(self):
+        return self.catal_number

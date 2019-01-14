@@ -75,6 +75,7 @@
         <div class="carousel-caption d-none d-md-block">
       <h4>Listen here :
       <a href="https://soundcloud.com/consumed-music/sets/alpha-particle-assembly-future" target='blank'><img src="{% static 'sciconlight.png' %}" style="width: 6%;" class="p-2"/></a>
+      <a href="#" target='blank'><img src="{% static 'itunesiconlight.png' %}" style="width: 5%;" class="p-2"/></a>
       <a href="https://open.spotify.com/album/2rqOTgTePFrpwQ8j2DVOdH" target='blank'><img src="{% static 'spotifyiconlight.png' %}" style="width: 6%;" class="p-2" /></a>
       <a href="https://www.deezer.com/en/album/82050592" target='blank'><img src="{% static 'deezericonlight.png' %}" style="width: 6%;" class="p-2" /></a>
       <a href="https://www.beatport.com/release/future/2469173" target='blank'><img src="{% static 'bpiconlight.png' %}" style="width: 6%;" class="p-2" /></a></h4>
@@ -85,6 +86,7 @@
         <div class="carousel-caption d-none d-md-block">
       <h4>Listen here :
       <a href="https://soundcloud.com/consumed-music/sets/mihalyz-nature-of-reality" target='blank'><img src="{% static 'sciconlight.png' %}" style="width: 6%;" class="p-2"/></a>
+      <a href="#" target='blank'><img src="{% static 'itunesiconlight.png' %}" style="width: 5%;" class="p-2"/></a>
       <a href="https://open.spotify.com/album/0FAnn89h22oIFq2djwBY0v" target='blank'><img src="{% static 'spotifyiconlight.png' %}" style="width: 6%;" class="p-2" /></a>
       <a href="https://www.deezer.com/en/album/77733212" target='blank'><img src="{% static 'deezericonlight.png' %}" style="width: 6%;" class="p-2" /></a>
       <a href="https://www.beatport.com/release/nature-of-reality/2432298" target='blank'><img src="{% static 'bpiconlight.png' %}" style="width: 6%;" class="p-2" /></a></h4>
@@ -95,6 +97,7 @@
         <div class="carousel-caption d-none d-md-block">
       <h4>Listen here :
       <a href="https://soundcloud.com/consumed-music/sets/lolla-tek-mikel-gil-ghost" target='blank'><img src="{% static 'sciconlight.png' %}" style="width: 6%;" class="p-2"/></a>
+      <a href="#" target='blank'><img src="{% static 'itunesiconlight.png' %}" style="width: 5%;" class="p-2"/></a>
       <a href="https://open.spotify.com/album/2VwHcMIHzu52o2GkVOuJqi" target='blank'><img src="{% static 'spotifyiconlight.png' %}" style="width: 6%;" class="p-2" /></a>
       <a href="https://www.deezer.com/en/album/72453042" target='blank'><img src="{% static 'deezericonlight.png' %}" style="width: 6%;" class="p-2" /></a>
       <a href="https://www.beatport.com/release/ghost-protocol/2385004" target='blank'><img src="{% static 'bpiconlight.png' %}" style="width: 6%;" class="p-2" /></a></h4>
@@ -116,19 +119,20 @@
 
             <div class="row">
               <!-- release card -->
-              {% for release in releases.all|slice:":3" %}
+              {% for release in releases.all|slice:":12" %}
 
 
               <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="card mb-3 shadow-sm">
+                <div class="card mb-2 shadow-sm">
                   <a href="{% url 'detail' release.id %}"><img class="card-img-top" src='{{ release.image.url }}' /> </a>
-                  <div class="card-body">
+                  <div class="card-body p-2">
 
                     <div class="d-flex justify-content-between align-items-center">
-                      <a href="{{ release.soundcloud_link }}" target='blank'><img src="{% static 'scicondark.png' %}" style="width: 80%;" /></a>
-                      <a href="{{ release.spotify_link }}" target='blank'><img src="{% static 'spotifyicondark.png' %}" style="width: 80%;" /></a>
-                      <a href="{{ release.deezer_link }}" target='blank'><img src="{% static 'deezericondark.png' %}" style="width: 80%;"/></a>
-                      <a href="{{ release.beatport_link }}" target='blank'><img src="{% static 'bpicondark.png' %}" style="width: 80%;"/></a>
+                      <a href="{{ release.soundcloud_link }}" target='blank'><img src="{% static 'scicondark.png' %}" style="width: 30px;" /></a>
+                      <a href="{{ release.itunes_link }}" target='blank'><img src="{% static 'itunesicondark.png' %}" style="width: 25px;" /></a>
+                      <a href="{{ release.spotify_link }}" target='blank'><img src="{% static 'spotifyicondark.png' %}" style="width: 30px;" /></a>
+                      <a href="{{ release.deezer_link }}" target='blank'><img src="{% static 'deezericondark.png' %}" style="width: 30px;"/></a>
+                      <a href="{{ release.beatport_link }}" target='blank'><img src="{% static 'bpicondark.png' %}" style="width: 30px;"/></a>
                         </div>
                         <br />
 
