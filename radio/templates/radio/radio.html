@@ -67,12 +67,15 @@
           <div class="album py-5 bg-secondary">
             <div class="container">
 
+              <h5 class="text-light text-center p-2 border border-light rounded">Full Length Sets and Radio Shows</h5>
+
+
               <div class="row">
 
-                <!-- support card -->
+                <!-- radio card -->
                 {% for mix in radio.all %}
 
-                <div class="col-md-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
                   <div class="card mb-4 shadow-sm bg-dark text-light">
                     <div class="card-body">
                         <iframe class="col-xl-auto" width="560" height="315" src="{{ mix.podcast_embed }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -87,7 +90,7 @@
                 </div>
 
                 {% endfor %}
-                  <!-- end support card -->
+                  <!-- end radio card -->
 
               </div>
             </div>
