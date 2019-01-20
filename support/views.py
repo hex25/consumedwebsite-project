@@ -7,5 +7,5 @@ from .models import Support, Supportimage
 
 def support(request):
 	supports = Support.objects.order_by('-catal_number')
-	screenshots = Supportimage.objects
+	screenshots = Supportimage.objects.order_by('-catal_number')
 	return render(request, 'support/support.html',{'support':supports, 'supportimage':screenshots,})
